@@ -1,4 +1,5 @@
 import {ArrayDataType} from './arrayDataType';
+import {DefaultDataType} from './defaultDataType';
 
 export class Target {
     constructor(type) {
@@ -8,7 +9,7 @@ export class Target {
                 result = new ArrayDataType()
                 break;
             default:
-                result = undefined;
+                result = new DefaultDataType()
         }
         return result
     }
